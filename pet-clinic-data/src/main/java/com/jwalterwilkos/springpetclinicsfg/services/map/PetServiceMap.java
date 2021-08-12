@@ -1,11 +1,11 @@
 package com.jwalterwilkos.springpetclinicsfg.services.map;
 
 import com.jwalterwilkos.springpetclinicsfg.model.Pet;
-import com.jwalterwilkos.springpetclinicsfg.services.CrudService;
+import com.jwalterwilkos.springpetclinicsfg.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
